@@ -1,0 +1,13 @@
+import turtle
+turtle.pensize(4)         //定义画笔粗细
+turtle.pencolor("gold")   //定义画笔颜色
+
+turtle.seth(90)          //起点画笔朝上，初始角度九十度
+turtle.circle(40,180)    //画半圆，注意半径正负数影响画圆的方向（正向左，负向右）
+turtle.circle(80,45)     //画四分之一圆（减少爱心中的直线段，避免生硬）
+turtle.fd(69.28)        //画爱心尖端的直线部分
+
+turtle.seth(35.5)       //画对称的另一边，转换角度，从上一步的结尾处开始，注意方向
+turtle.fd(69.28)
+turtle.circle(80,45)
+turtle.circle(40,18)
